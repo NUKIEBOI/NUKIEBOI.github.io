@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conner — aspiring electrical engineer building UAV systems, autonomy, and defense-tech software.">
+<title>Conner — UAV Systems &amp; Autonomy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="brand-mark">&gt;_</span> NUKIEBOI</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="https://github.com/NUKIEBOI" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-kicker reveal">SYS.BOOT // portfolio v1.0</p>
+    <h1 class="reveal">Conner</h1>
+    <p class="hero-tagline reveal">Aspiring Electrical Engineer — UAV Systems &amp; Autonomy</p>
+    <p class="hero-sub reveal">I build the software that flies: flight dynamics, navigation, and autonomous drone swarms. Teaching myself engineering one working system at a time.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#projects">View projects</a>
+      <a class="btn btn-ghost" href="https://github.com/NUKIEBOI" target="_blank" rel="noopener">GitHub profile</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">projects shipped</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">repos live on GitHub</span></div>
+      <div class="stat"><span class="stat-num">1</span><span class="stat-label">hardware build in progress</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title reveal"><span class="prompt">$</span> whoami</h2>
+    <div class="about-body reveal">
+      <p>I come from electronics manufacturing — I know how hardware gets built, inspected, and shipped. Now I'm teaching myself engineering the way I learn best: by building real systems and making them work.</p>
+      <p>My focus is UAV systems and autonomy: flight dynamics, navigation math, and the software that lets drones think for themselves. My goal is to become an electrical engineer in defense and aerospace.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title reveal"><span class="prompt">$</span> ls ./projects</h2>
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>Python Flight Simulator</h3>
+          <a class="repo-link" href="https://github.com/NUKIEBOI/python-flight-simulator" target="_blank" rel="noopener" aria-label="Python Flight Simulator on GitHub">↗</a>
+        </div>
+        <p class="card-desc">Cessna 172-class 6-DOF flight simulator with 3D graphics and a full cockpit HUD.</p>
+        <ul class="chips">
+          <li>6-DOF dynamics</li><li>Stall modeling</li><li>Panda3D + NumPy</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>NumPy</span><span>Panda3D</span></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>UAV Simulator</h3>
+          <a class="repo-link" href="https://github.com/NUKIEBOI/python-uav-simulator" target="_blank" rel="noopener" aria-label="UAV Simulator on GitHub">↗</a>
+        </div>
+        <p class="card-desc">Predator-style surveillance UAV with autonomous waypoint flight and a scan-and-detect camera payload.</p>
+        <ul class="chips">
+          <li>Waypoint autopilot</li><li>Scan-and-detect payload</li><li>12/12 targets found</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>NumPy</span><span>Panda3D</span></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>Sensor Fusion Lab</h3>
+          <a class="repo-link" href="https://github.com/NUKIEBOI/sensor-fusion-lab" target="_blank" rel="noopener" aria-label="Sensor Fusion Lab on GitHub">↗</a>
+        </div>
+        <p class="card-desc">Kalman filter fusing IMU + GPS for precision navigation — the math inside every drone and missile.</p>
+        <figure class="card-plot">
+          <img src="assets/position_error.svg" alt="Position error over time: dead reckoning vs GPS vs Kalman-fused solution" loading="lazy">
+          <figcaption>Fused solution holds 1.9 m RMSE through GPS outages</figcaption>
+        </figure>
+        <ul class="chips">
+          <li>1.9 m RMSE</li><li>Survives GPS outages</li><li>57× better than dead reckoning</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>NumPy</span><span>Kalman filter</span></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>Swarm Command Demo</h3>
+          <a class="repo-link" href="https://github.com/NUKIEBOI/swarm-command-demo" target="_blank" rel="noopener" aria-label="Swarm Command Demo on GitHub">↗</a>
+        </div>
+        <p class="card-desc">Five autonomous UAVs cooperatively searching 2×2 km, sharing detections over a simulated mesh network.</p>
+        <figure class="card-plot">
+          <img src="assets/coverage_map.svg" alt="Swarm search coverage map with detection markers" loading="lazy">
+          <figcaption>Coordinated sector search with shared detections</figcaption>
+        </figure>
+        <figure class="card-plot">
+          <img src="assets/comparison.svg" alt="Coordinated vs uncoordinated swarm search comparison" loading="lazy">
+          <figcaption>Coordination finds every target faster</figcaption>
+        </figure>
+        <ul class="chips">
+          <li>394 s coordinated</li><li>vs 536 s uncoordinated</li><li>Mesh detection sharing</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>NumPy</span><span>Autonomy</span></div>
+      </article>
+
+      <article class="card card-wip reveal">
+        <div class="card-head">
+          <h3>Pi Detection Payload <span class="wip-badge">In progress</span></h3>
+          <a class="repo-link" href="https://github.com/NUKIEBOI/pi-detection-payload" target="_blank" rel="noopener" aria-label="Pi Detection Payload on GitHub">↗</a>
+        </div>
+        <p class="card-desc">Real hardware: Raspberry Pi + camera + IMU doing live object detection with a phone-viewable dashboard.</p>
+        <ul class="chips">
+          <li>Real hardware</li><li>YOLO + IMU</li><li>Phone-viewable dashboard</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Raspberry Pi</span><span>OpenCV</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2 class="section-title reveal"><span class="prompt">$</span> cat skills.txt</h2>
+    <ul class="skill-chips reveal">
+      <li>Python</li>
+      <li>NumPy</li>
+      <li>Kalman filtering</li>
+      <li>Flight dynamics</li>
+      <li>Panda3D</li>
+      <li>Raspberry Pi</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2 class="section-title reveal"><span class="prompt">$</span> ./contact.sh</h2>
+    <div class="contact-body reveal">
+      <p>Open to internships and junior roles in defense, aerospace, and UAV systems.</p>
+      <a class="btn btn-primary" href="https://github.com/NUKIEBOI" target="_blank" rel="noopener">Find me on GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by hand — no templates.</p>
+  <p class="footer-sub">© 2026 Conner · <a href="https://github.com/NUKIEBOI" target="_blank" rel="noopener">NUKIEBOI</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
