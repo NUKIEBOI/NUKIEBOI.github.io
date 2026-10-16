@@ -27,15 +27,14 @@
   <!-- HERO -->
   <section class="hero">
     <h1 class="reveal">Conner</h1>
-    <p class="hero-tagline reveal">Aspiring Electrical Engineer — UAV Systems &amp; Autonomy</p>
     <p class="hero-sub reveal">I build the software that flies: flight dynamics, navigation, and autonomous drone swarms. Teaching myself engineering one working system at a time.</p>
     <div class="hero-actions reveal">
       <a class="btn btn-primary" href="#projects">View projects</a>
       <a class="btn btn-ghost" href="https://github.com/NUKIEBOI" target="_blank" rel="noopener">GitHub profile</a>
     </div>
     <div class="hero-stats reveal">
-      <div class="stat"><span class="stat-num">4</span><span class="stat-label">projects shipped</span></div>
-      <div class="stat"><span class="stat-num">5</span><span class="stat-label">repos live on GitHub</span></div>
+      <div class="stat"><span class="stat-num" id="statProjects">4</span><span class="stat-label">projects shipped</span></div>
+      <div class="stat"><span class="stat-num" id="statRepos">5</span><span class="stat-label">repos live on GitHub</span></div>
       <div class="stat"><span class="stat-num">5,300+</span><span class="stat-label">lines of Python</span></div>
     </div>
   </section>
@@ -43,9 +42,9 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <h2 class="section-title reveal">Projects</h2>
-    <div class="cards">
+    <div class="cards" id="projectCards">
 
-      <article class="card reveal">
+      <article class="card reveal" data-repo="python-flight-simulator">
         <div class="card-head">
           <h3>Python Flight Simulator</h3>
           <a class="repo-link" href="https://github.com/NUKIEBOI/python-flight-simulator" target="_blank" rel="noopener" aria-label="Python Flight Simulator on GitHub">↗</a>
@@ -57,7 +56,7 @@
         <div class="tags"><span>Python</span><span>NumPy</span><span>Panda3D</span></div>
       </article>
 
-      <article class="card reveal">
+      <article class="card reveal" data-repo="python-uav-simulator">
         <div class="card-head">
           <h3>UAV Simulator</h3>
           <a class="repo-link" href="https://github.com/NUKIEBOI/python-uav-simulator" target="_blank" rel="noopener" aria-label="UAV Simulator on GitHub">↗</a>
@@ -69,7 +68,7 @@
         <div class="tags"><span>Python</span><span>NumPy</span><span>Panda3D</span></div>
       </article>
 
-      <article class="card reveal">
+      <article class="card reveal" data-repo="sensor-fusion-lab">
         <div class="card-head">
           <h3>Sensor Fusion Lab</h3>
           <a class="repo-link" href="https://github.com/NUKIEBOI/sensor-fusion-lab" target="_blank" rel="noopener" aria-label="Sensor Fusion Lab on GitHub">↗</a>
@@ -85,7 +84,7 @@
         <div class="tags"><span>Python</span><span>NumPy</span><span>Kalman filter</span></div>
       </article>
 
-      <article class="card reveal">
+      <article class="card reveal" data-repo="swarm-command-demo">
         <div class="card-head">
           <h3>Swarm Command Demo</h3>
           <a class="repo-link" href="https://github.com/NUKIEBOI/swarm-command-demo" target="_blank" rel="noopener" aria-label="Swarm Command Demo on GitHub">↗</a>
